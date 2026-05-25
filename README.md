@@ -3,3 +3,6 @@ Code for ML workshop at Charles University, May 2026 with different demonstratio
 
 ## `fit_sinewave`
 Fit a sine wave using an artificial neural network. Lightly updated by [Daniel Hueholt](https://hueholt.earth) from original version used in Arcodia et al. 2022 "Applied Machine Learning Tutorial for Earth Scientists": [Zenodo link to original](https://doi.org/10.5281/zenodo.6686878).  Code originally by [Emily Gordon](https://emilymgordon.com) and [Frances Davenport](https://fdavenport.github.io).
+
+## `nn_class_palmerpenguins`
+Classify penguins from the Palmer Penguins dataset using an artificial neural network.
