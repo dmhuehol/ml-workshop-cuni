@@ -8,6 +8,10 @@ Notes on tuning, data preparation, and other factors for each of the notebooks d
   * [f_s.2: Simpler model](#f_s2-simpler-model)
   * [f_s.3: Deep model](#f_s3-deep-model)
   * [f_s.4: Implications](#f_s4-implications)
+* [nn_c_pp: `nn_class_palmerpenguins`](#nn_c_pp-nn_class_palmerpenguins)
+  * [nn_c_pp.1: Simple model](#nn_c_pp1-simple-model)
+  * [nn_c_pp.2: Autoencoder](#nn_c_pp2-autoencoder)
+  * [nn_c_pp.3: Implications](#nn_c_pp3-implications)
 
 ## f_s: fit_sinewave
 This problem is deceptively challenging! It is actually not trivial to represent periodic behavior in a purely statistical framework.
@@ -101,7 +105,9 @@ The penguins can also be classified with a much more complex model. This archite
 Experiment with adjusting the size of the latent space. You cannot make the latent space any smaller without losing critical information for classification and compromising model performance.
 
 ### nn_c_pp.3: Implications
-In my experience, it is actually fairly straightforward to find a network that almost perfectly classifies our penguins! However, nothing tells you that you've reached a stopping point: you have to exercise your own judgment as a scientist to decide that any given model is good enough. We can think of this in terms of two principles:  
+In my experience, it is actually fairly straightforward to find a network that almost perfectly classifies our penguins! However, nothing tells you that you've reached a stopping point. You have to exercise your own judgment as a scientist to decide that any given model is good enough. We can think of this in terms of two principles:  
 
 * *Don’t be afraid to try many options!* Iterative refinement is key to making a successful network. 
-* *Don't be afraid to stop!* Remember that you are creating the model for a specific purpose to answer a specific scientific question. Once you have obtained a network that is adequate for your given purpose, you can stop there! It is not our goal to obtain the "perfect model". (Perfection is not even a well-defined goal for most problems!) 
+* *Don't be afraid to stop!* Remember that you are creating the model for a specific purpose to answer a specific scientific question. Once you have obtained a network that is adequate for your given purpose, you can stop there! It is not our goal to obtain the "perfect model". (Perfection is not even a well-defined goal for most problems!)
+
+To define adequacy for purpose, we often have to think carefully about our metrics and our data. Our test must have *construct validity* for the intended real-world application, that is, to address “how well the benchmark dataset, and associated metrics of evaluation, represents a task” (Raji et al. 2021 [link](https://doi.org/10.48550/arXiv.2111.15366). The WeatherBench project discusses many metrics common in weather forecasting applications: Rasp et al. 2024 [link](doi.org/10.1029/2023MS004019).
