@@ -66,37 +66,37 @@ These questions are directly relevant in model applications--for example, in how
 
 ### nn_c_pp.1: Simple model
 The penguins can be classified with a simple model consisting of a single layer with 10 nodes.
-    * `loss: tf.keras.losses.CategoricalCrossentropy(from_logits=True)`
-    * `"metric": 'accuracy'`
-    * `"hidden_nodes": [10,]`
-    * `"out_nodes": 3`
-    * `"rnd_state": 13`
-    * `"activations": {"hid": 'relu', "out": 'softmax'}`
-    * `"num_epochs": 50`
-    * `"batch_size": 32`
-    * `"learn_rate": 0.01`
-    * `"initializer": tf.keras.initializers.RandomNormal`
-    * `"regularizer": None`
-    * `"early_stop": tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', patience=20, verbose=1, mode='auto', restore_best_weights=True)`
-    * `"verbosity": 1`
-    * `"class_weight": None`
+* `loss: tf.keras.losses.CategoricalCrossentropy(from_logits=True)`
+* `"metric": 'accuracy'`
+* `"hidden_nodes": [10,]`
+* `"out_nodes": 3`
+* `"rnd_state": 13`
+* `"activations": {"hid": 'relu', "out": 'softmax'}`
+* `"num_epochs": 50`
+* `"batch_size": 32`
+* `"learn_rate": 0.01`
+* `"initializer": tf.keras.initializers.RandomNormal`
+* `"regularizer": None`
+* `"early_stop": tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', patience=20, verbose=1, mode='auto', restore_best_weights=True)`
+* `"verbosity": 1`
+* `"class_weight": None`
 
 ### nn_c_pp.2: Autoencoder
 The penguins can also be classified with a much more complex model. This architecture is called an *autoencoder*, which refers to a structure where the data is squashed down to the smallest number of nodes possible in an interim layer ("latent space"; in this case, the 5-node layer) then expanded again. This can act as a way force the network to focus on the most important features. It can also be an effective method of compressing data!
-    * `loss: tf.keras.losses.CategoricalCrossentropy(from_logits=True)`
-    * `"metric": 'accuracy'`
-    * `"hidden_nodes": [15, 5, 15]`
-    * `"out_nodes": 3`
-    * `"rnd_state": 13`
-    * `"activations": {"hid": 'relu', "out": 'softmax'}`
-    * `"num_epochs": 50`
-    * `"batch_size": 32`
-    * `"learn_rate": 0.01`
-    * `"initializer": tf.keras.initializers.RandomNormal`
-    * `"regularizer": None`
-    * `"early_stop": tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', patience=20, verbose=1, mode='auto', restore_best_weights=True)`
-    * `"verbosity": 1`
-    * `"class_weight": None`
+* `loss: tf.keras.losses.CategoricalCrossentropy(from_logits=True)`
+* `"metric": 'accuracy'`
+* `"hidden_nodes": [15, 5, 15]`
+* `"out_nodes": 3`
+* `"rnd_state": 13`
+* `"activations": {"hid": 'relu', "out": 'softmax'}`
+* `"num_epochs": 50`
+* `"batch_size": 32`
+* `"learn_rate": 0.01`
+* `"initializer": tf.keras.initializers.RandomNormal`
+* `"regularizer": None`
+* `"early_stop": tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', patience=20, verbose=1, mode='auto', restore_best_weights=True)`
+* `"verbosity": 1`
+* `"class_weight": None`
 
 Experiment with adjusting the size of the latent space. You cannot make the latent space any smaller without losing critical information for classification and compromising model performance.
 
