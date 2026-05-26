@@ -2,6 +2,13 @@
 
 Notes on tuning, data preparation, and other factors for each of the notebooks demonstrated here. These are kept separate so the notebooks can be encountered "spoiler-free" before seeing the notes here!
 
+### Table of contents
+* [f_s: `fit_sinewave`](#f_s-fit_sinewave)
+  * [f_s.1: One node for each input](#f_s1-one-node-for-each-input)
+  * [f_s.2: Simpler model](#f_s2-simpler-model)
+  * [f_s.3: Deep model](#f_s3-deep-model)
+  * [f_s.4: Implications](#f_s4-implications)
+
 ## f_s: fit_sinewave
 This problem is deceptively challenging! It is actually not trivial to represent periodic behavior in a purely statistical framework.
 
@@ -43,11 +50,14 @@ The sine wave can also be approximated with a more complex deep neural network.
 
 Note from the training dynamics that this displays a similar local minimum as the model in **f_s.1**.  
 
-This example is idealized--it's rare you need to directly approximate a sine wave! But, this illustrates a key principle: many different model architectures can give similar results. In the mathematical theory of model development, this is called the *Rashomon Effect* (e.g., Rudin 2024 [link](https://arxiv.org/pdf/2507.03884)).  
+*Model selection contributed by [Herijaona Hani-Roge Hundilida Randriatsara](https://www.linkedin.com/in/hundi-randriatsara/).*
 
-The Rashomon Effect gives rise to many questions about model development, for example:
-* Should we train a deep model if a simpler one is adequate for a purpose?
+### f_s.4: Implications
+This example is idealized--it's rare you need to directly approximate a sine wave! But, our different models illustrate a key principle: many different model architectures can give similar results. In the mathematical theory of model development, this is called the *Rashomon Effect* (e.g., Rudin 2024 [link](https://arxiv.org/pdf/2507.03884)).  
+
+The Rashomon Effect raises many questions about model development, for example:
+* Should we train a deep model if a simpler one is adequate for purpose?
 * If we understand the dynamics of a system (in this case, `sin(x)`), should we apply that dynamical knowledge, these statistical methods, or both? 
-* Is predictive accuracy the primary metric of model adequacy, or are there other principles that guide us (e.g., interpretability, explainability, efficiency)? What if there are tradeoffs between principles that we care about?
+* Is predictive accuracy the primary metric of model adequacy, or are there other principles that guide us (e.g., interpretability, explainability, efficiency)? What if there are tradeoffs between multiple principles that we care about?
 
 These questions are directly relevant in model applications--for example, in how models are evaluated and adopted in higher-stakes environments like operational forecasting.  
