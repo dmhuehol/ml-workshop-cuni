@@ -1,5 +1,5 @@
 # ml-workshop-cuni
-Code for machine learning (ML) workshop at Charles University (May 26-27, 2026) with different demonstration applications of neural networks implemented in Tensorflow in Python.
+Code for machine learning (ML) workshop at the Charles University Katedra fyziky atmosféry (May 26-27, 2026) with different demonstration applications of neural networks implemented in Tensorflow in Python.
 
 ### Table of contents
 * [1. `fit_sinewave`](#1-fit_sinewave)
