@@ -32,4 +32,4 @@ notes.md provides notes on each notebook including relevant hyperparameters, tun
 ## 5. Workshop information
 Workshop led by [Daniel Hueholt](https://hueholt.earth), who also maintains this repository.  
 
-Slides are accessible through Google Drive: [link](https://drive.google.com/drive/folders/1jSVGBowETxwXdD1yYBwDwIXDVpI9d2aD?usp=sharing).
+Slides from the research seminar (May 19), lecture on climate data science (May 20), and workshop on ML applications (May 26-27) are accessible through Google Drive: [link](https://drive.google.com/drive/folders/1jSVGBowETxwXdD1yYBwDwIXDVpI9d2aD?usp=sharing).
