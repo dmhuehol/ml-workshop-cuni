@@ -1,5 +1,5 @@
 # ml-workshop-cuni
-Code for machine learning (ML) workshop at the Charles University Katedra fyziky atmosféry (May 26-27, 2026) with different demonstration applications of neural networks implemented in Tensorflow in Python.
+Code for machine learning (ML) workshop at the Charles University Katedra fyziky atmosféry (May 2026) with different demonstration applications of neural networks implemented in Tensorflow in Python.
 
 ### Table of contents
 * [1. `fit_sinewave`](#1-fit_sinewave)
@@ -30,4 +30,6 @@ Predict ozone concentrations (regression problem) at Joshua Tree National Park f
 notes.md provides notes on each notebook including relevant hyperparameters, tuning information, and further information about what each notebook demonstrates. These are kept separate from the main notebooks so that a new user can have the ideal "spoiler-free" experience!
 
 ## 5. Workshop information
-Workshop led by [Daniel Hueholt](https://hueholt.earth), who also maintains this repository.
+Workshop led by [Daniel Hueholt](https://hueholt.earth), who also maintains this repository.  
+
+Slides are accessible through Google Drive: [link](https://drive.google.com/drive/folders/1jSVGBowETxwXdD1yYBwDwIXDVpI9d2aD?usp=sharing).
