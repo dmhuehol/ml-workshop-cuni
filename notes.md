@@ -12,6 +12,8 @@ Notes on tuning, data preparation, and other factors for each of the notebooks d
   * [nn_c_pp.1: Simple model](#nn_c_pp1-simple-model)
   * [nn_c_pp.2: Autoencoder](#nn_c_pp2-autoencoder)
   * [nn_c_pp.3: Implications](#nn_c_pp3-implications)
+* [a_o_j: `ann_ozone_joshuatree`](#a_o_j-ann_ozone_joshuatree)
+  * [a_o_j.1: One possible model](#a_o_j1-one-possible-model)
 
 ## f_s: fit_sinewave
 This problem is deceptively challenging! It is actually not trivial to represent periodic behavior in a purely statistical framework.
@@ -115,15 +117,11 @@ To define whether our model is adequate for purpose, we must have a very good id
 ## a_o_j: ann_ozone_joshuatree
 
 ### a_o_j.1: One possible model
-One possible approach is below.
-* `"learning_rate": 0.00001`
-* `"batch_size": 512`
-* `"max_epochs": 400`
-* `"activations": ["relu",]`
-* `"hiddens": [500,]`
-* `"loss": 'mse'`
-* `"random_seed": 33`
-* `"patience": 20`
-* `"dropout_rate": 0`
-
-This produces a model with a variance explained of approximately 60%. With this set of input parameters, I've found it very difficult to get performance significantly better than this! If you find a different approach, please let me know and I'll add it here.
+This produces a model with the following metrics: 
+* Mean absolute error: 0.46595
+* Median absolute error: 0.34917
+* Root mean squared error: 0.62492
+* Maximum error: 2.93097
+* Variance explained: 59.984%
+  
+With this set of input features (temperature, relative humidity, wind speed, day of year), I haven't been able to improve performance significantly beyond this! Please let me know if you find an approach that performs dramatically differently from this and I'll add it here.
