@@ -6,7 +6,7 @@ Code for machine learning (ML) workshop at the Charles University Katedra fyziky
 * [2. `nn_class_palmerpenguins`](#2-nn_class_palmerpenguins)  
 * [3. `ann_ozone_joshuatree`](#3-ann_ozone_joshuatree)
 * [4. notes.md](#4-notesmd)
-* [5. `Workshop information`](#5-workshop-information)  
+* [5. Workshop information and slides](#5-workshop-information-and-slides)  
 
 ## 1. `fit_sinewave`
 Fit a sine wave using an artificial neural network. This provides the easiest "quick start" to playing around with fundamentals of ANNs!
@@ -29,7 +29,7 @@ Predict ozone concentrations (regression problem) at Joshua Tree National Park f
 ## 4. notes.md
 notes.md provides notes on each notebook including relevant hyperparameters, tuning information, and further information about what each notebook demonstrates. These are kept separate from the main notebooks so that a new user can have the ideal "spoiler-free" experience!
 
-## 5. Workshop information
+## 5. Workshop information and slides
 Workshop led by [Daniel Hueholt](https://hueholt.earth), who also maintains this repository.  
 
 Slides from the research seminar (May 19), lecture on climate data science (May 20), and workshop on ML applications (May 26-27) are accessible through Google Drive: [link](https://drive.google.com/drive/folders/1jSVGBowETxwXdD1yYBwDwIXDVpI9d2aD?usp=sharing).
