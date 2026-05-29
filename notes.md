@@ -111,3 +111,19 @@ In my experience, it is actually fairly straightforward to find a network that a
 * *Don't be afraid to stop!* Remember that you are creating the model for a specific purpose to answer a specific scientific question. Once you have obtained a network that is adequate for your given purpose, you can stop there! It is not our goal to obtain the "perfect model". (Perfection is not even a well-defined goal for most problems!)
 
 To define whether our model is adequate for purpose, we must have a very good idea of our purpose--which often means thinking carefully about our metrics and our data. Our test must have *construct validity* for the intended real-world application, that is, to address “how well the benchmark dataset, and associated metrics of evaluation, represents a task” (Raji et al. 2021 [link](https://doi.org/10.48550/arXiv.2111.15366)). The WeatherBench project discusses many metrics common in weather forecasting applications: Rasp et al. 2024 [link](doi.org/10.1029/2023MS004019).
+
+## a_o_j: ann_ozone_joshuatree
+
+### a_o_j.1: One possible model
+One possible approach is below.
+* `"learning_rate": 0.00001`
+* `"batch_size": 512`
+* `"max_epochs": 400`
+* `"activations": ["relu",]`
+* `"hiddens": [500,]`
+* `"loss": 'mse'`
+* `"random_seed": 33`
+* `"patience": 20`
+* `"dropout_rate": 0`
+
+This produces a model with a variance explained of approximately 60%. With this set of input parameters, I've found it very difficult to get performance significantly better than this! If you find a different approach, please let me know and I'll add it here.
